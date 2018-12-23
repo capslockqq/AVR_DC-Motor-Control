@@ -53,5 +53,37 @@
     <ClCompile Include="main.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="DCMotor12Volts.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="PID.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadratureEncoder.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DCMotor12Volts.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="gcc_Debug.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="gcc_Release.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="IDCMotor.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="IEncoder.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="PID.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadratureEncoder.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
