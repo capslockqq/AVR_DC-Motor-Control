@@ -26,11 +26,10 @@
       <UniqueIdentifier>{5d475cd1-7c2d-43bc-91a0-d85b804b2e98}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ClCompile Include="LEDBlink.cpp">
-      <Filter>Source files</Filter>
-    </ClCompile>
+    <None Include="Makefile" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="avr.mak">
       <Filter>Source files\Device-specific files</Filter>
     </None>
@@ -49,5 +48,10 @@
     <None Include="avr.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

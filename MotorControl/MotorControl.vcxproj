@@ -79,7 +79,7 @@
   </ImportGroup>
   <ItemGroup />
   <ItemGroup>
-    <ClCompile Include="LEDBlink.cpp" />
+    <ClCompile Include="main.cpp" />
     <None Include="avr.mak" />
     <None Include="Makefile" />
     <None Include="debug.mak" />
