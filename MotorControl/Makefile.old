@@ -36,7 +36,7 @@ error:
 	$(error Invalid configuration, please check your inputs)
 endif
 
-SOURCEFILES := main.cpp
+SOURCEFILES := DCMotor12VoltsDriver.cpp main.cpp operators.cpp PID.cpp QuadratureEncoder.cpp test.cpp
 EXTERNAL_LIBS := 
 EXTERNAL_LIBS_COPIED := $(foreach lib, $(EXTERNAL_LIBS),$(BINARYDIR)/$(notdir $(lib)))
 

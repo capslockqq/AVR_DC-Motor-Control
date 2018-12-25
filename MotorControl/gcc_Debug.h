@@ -709,6 +709,9 @@
 #ifndef __UDQ_FBIT__
 #define __UDQ_FBIT__ 64
 #endif
+#ifndef DEBUG
+#define DEBUG 1
+#endif
 #ifndef __INT8_TYPE__
 #define __INT8_TYPE__ signed char
 #endif
@@ -1285,12 +1288,10 @@
 #ifndef __BUILTIN_AVR_FMUL
 #define __BUILTIN_AVR_FMUL 1
 #endif
-#ifndef DEBUG
-#define DEBUG 1
-#endif
 #endif
 
 // --- Include directories begin --- //
+//.
 //$(TOOLCHAIN_ROOT)\lib\gcc\avr\5.3.0\include
 //$(TOOLCHAIN_ROOT)\lib\gcc\avr\5.3.0\include-fixed
 //$(TOOLCHAIN_ROOT)\avr\include

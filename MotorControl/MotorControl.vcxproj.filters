@@ -53,20 +53,20 @@
     <ClCompile Include="main.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="DCMotor12Volts.cpp">
-      <Filter>Source files</Filter>
-    </ClCompile>
     <ClCompile Include="PID.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="QuadratureEncoder.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="DCMotor12VoltsDriver.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="operators.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DCMotor12Volts.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
     <ClInclude Include="gcc_Debug.h">
       <Filter>Header files</Filter>
     </ClInclude>
@@ -83,6 +83,12 @@
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="QuadratureEncoder.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DCMotor12VoltsDriver.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="operators.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

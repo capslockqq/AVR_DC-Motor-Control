@@ -2,8 +2,6 @@
 #include "DCMotorMock.h"
 #include "gmock/gmock.h"
 #include "../MotorControl/PID.cpp"
-#include "../MotorControl/QuadratureEncoder.cpp"
-#include "../MotorControl/DCMotor12Volts.cpp"
 
 bool operator==(const PIDVal& lhs, const PIDVal& rhs)
 {

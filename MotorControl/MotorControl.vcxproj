@@ -47,9 +47,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <NMakeIncludeSearchPath>$(TOOLCHAIN_ROOT)\lib\gcc\avr\5.3.0\include;$(TOOLCHAIN_ROOT)\lib\gcc\avr\5.3.0\include-fixed;$(TOOLCHAIN_ROOT)\avr\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>.;$(TOOLCHAIN_ROOT)\lib\gcc\avr\5.3.0\include;$(TOOLCHAIN_ROOT)\lib\gcc\avr\5.3.0\include-fixed;$(TOOLCHAIN_ROOT)\avr\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
-    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
     <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
@@ -57,6 +56,7 @@
     <IncludePath />
     <ReferencePath />
     <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <NMakeIncludeSearchPath>$(TOOLCHAIN_ROOT)\lib\gcc\avr\5.3.0\include;$(TOOLCHAIN_ROOT)\lib\gcc\avr\5.3.0\include-fixed;$(TOOLCHAIN_ROOT)\avr\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
@@ -73,11 +73,12 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="DCMotor12Volts.h" />
+    <ClInclude Include="DCMotor12VoltsDriver.h" />
     <ClInclude Include="gcc_Debug.h" />
     <ClInclude Include="gcc_Release.h" />
     <ClInclude Include="IDCMotor.h" />
     <ClInclude Include="IEncoder.h" />
+    <ClInclude Include="operators.h" />
     <ClInclude Include="PID.h" />
     <ClInclude Include="QuadratureEncoder.h" />
   </ItemGroup>
@@ -86,8 +87,9 @@
   </ImportGroup>
   <ItemGroup />
   <ItemGroup>
-    <ClCompile Include="DCMotor12Volts.cpp" />
+    <ClCompile Include="DCMotor12VoltsDriver.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="operators.cpp" />
     <ClCompile Include="PID.cpp" />
     <ClCompile Include="QuadratureEncoder.cpp" />
     <None Include="avr.mak" />

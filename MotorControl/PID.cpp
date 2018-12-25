@@ -60,11 +60,11 @@ float PID::Correction(float setpoint)
 	float derivative = _firstTime == false ? error - _previousError : 0; //Ensuring that the code will have run twice before calculating derivative contribution
 	_firstTime = false;
 	_integral += error;
-	if (_integral > _val.IntegratorLimit) {//Integral windup protection
-		_integral = _val.IntegratorLimit;
+	if (_integral*_val.ki > _val.IntegratorLimit) {//Integral windup protection
+		_integral = _val.IntegratorLimit/_val.ki;
 	}
-	else if (_integral < -_val.IntegratorLimit) {
-		_integral = -_val.IntegratorLimit;
+	else if (_integral*_val.ki < -_val.IntegratorLimit) {
+		_integral = -_val.IntegratorLimit/_val.ki;
 	}
 	
 	float tmpCorrection = error * _val.kp + _integral*_val.ki + derivative*_val.kd;
@@ -78,8 +78,6 @@ float PID::Correction(float setpoint)
 	_correction = tmpCorrection;
 	_previousError = error;
 	return _correction;
-
-
 }
 
 float PID::GetMeasurement() {
@@ -89,8 +87,8 @@ float PID::GetMeasurement() {
 void PID::Control(float setpoint)
 {
 	Correction(setpoint);
-	_dir = _correction < 0 ? left : right;
-	float numericCorrection = _correction < 0 ? _correction * -1 : _correction; // Making sure speed is positive
+	_dir = _correction < 0 ? counterClockwise : clockwise;
+	float numericCorrection = _correction < 0 ? _correction * -1 : _correction; // Making sure speed (voltage) is positive
 	_dcMotor->SetSpeed(numericCorrection, _dir);
 }
 

@@ -1,7 +1,7 @@
 #pragma once
 typedef enum {
-	left,
-	right,
+	counterClockwise,
+	clockwise,
 }Direction;
 class IDCMotor{
 public:

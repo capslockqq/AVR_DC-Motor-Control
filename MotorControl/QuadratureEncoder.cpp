@@ -4,6 +4,7 @@
 
 QuadratureEncoder::QuadratureEncoder()
 {
+	
 }
 
 float QuadratureEncoder::GetPosition()
