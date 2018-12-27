@@ -15,6 +15,9 @@
     <ClInclude Include="DCMotorMock.h">
       <Filter>Mocks</Filter>
     </ClInclude>
+    <ClInclude Include="PWMDriverMock.h">
+      <Filter>Mocks</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

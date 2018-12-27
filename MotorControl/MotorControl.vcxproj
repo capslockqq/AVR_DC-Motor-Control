@@ -78,8 +78,10 @@
     <ClInclude Include="gcc_Release.h" />
     <ClInclude Include="IDCMotor.h" />
     <ClInclude Include="IEncoder.h" />
+    <ClInclude Include="IGPIODriver.h" />
     <ClInclude Include="operators.h" />
     <ClInclude Include="PID.h" />
+    <ClInclude Include="PWMDriver.h" />
     <ClInclude Include="QuadratureEncoder.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
@@ -91,6 +93,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="operators.cpp" />
     <ClCompile Include="PID.cpp" />
+    <ClCompile Include="PWMDriver.cpp" />
     <ClCompile Include="QuadratureEncoder.cpp" />
     <None Include="avr.mak" />
     <None Include="Makefile" />

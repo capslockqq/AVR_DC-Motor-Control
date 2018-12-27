@@ -44,6 +44,7 @@
     <ClInclude Include="DCMotorMock.h" />
     <ClInclude Include="EncoderMock.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="PWMDriverMock.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DCMotor12VoltsDriverTest.cpp" />

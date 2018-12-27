@@ -1,5 +1,7 @@
 #include <avr/io.h>
 #include "DCMotor12VoltsDriver.h"
+#include "IGPIODriver.h"
+#include "PWMDriver.h"
 #include "IDCMotor.h"
 #include "PID.h"
 #include "QuadratureEncoder.h"
@@ -10,12 +12,13 @@
 
 int main()
 {
-	IDCMotor *motor = new DCMotor12VoltsDriver();
+	IGPIODriver *pwm = new PWMDriver();
+	IDCMotor *motor = new DCMotor12VoltsDriver(pwm);
 	IEncoder *encoder = new QuadratureEncoder();
 	
 	PIDVal PIDValues; 
-	PIDValues.kp = 0;
-	PIDValues.ki = 0.01;
+	PIDValues.kp = 1;
+	PIDValues.ki = 0;
 	PIDValues.kd = 0;
 	PIDValues.Max = 12; //12 Volts is maximum
 	PIDValues.Min = -12;//-12 volts is minimum (getting changed to direction instead)
@@ -25,7 +28,7 @@ int main()
 	float i = 0;
 
 	while(true) {
-		controller.Control(20.0);
+		controller.Control(1.5);
 		_delay_ms(500);
 		
 	}

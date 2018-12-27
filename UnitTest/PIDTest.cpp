@@ -32,7 +32,6 @@ protected:
 		// before the destructor).
 	}
 
-
 	// Objects declared here can be used by all tests in the test case for Project1.
 	EncoderMock encoder;
 	DCMotorMock dcMotor;

@@ -14,6 +14,9 @@
 #ifndef __HQ_FBIT__
 #define __HQ_FBIT__ 15
 #endif
+#ifndef __cpp_attributes
+#define __cpp_attributes 200809
+#endif
 #ifndef __UINT_LEAST16_MAX__
 #define __UINT_LEAST16_MAX__ 0xffffU
 #endif
@@ -68,6 +71,9 @@
 #ifndef __WINT_MAX__
 #define __WINT_MAX__ 0xffffU
 #endif
+#ifndef __cpp_static_assert
+#define __cpp_static_assert 200410
+#endif
 #ifndef __USFRACT_FBIT__
 #define __USFRACT_FBIT__ 8
 #endif
@@ -118,6 +124,9 @@
 #endif
 #ifndef __BUILTIN_AVR_BITSLLR
 #define __BUILTIN_AVR_BITSLLR 1
+#endif
+#ifndef __cpp_variadic_templates
+#define __cpp_variadic_templates 200704
 #endif
 #ifndef __UINT_FAST64_MAX__
 #define __UINT_FAST64_MAX__ 0xffffffffffffffffULL
@@ -196,6 +205,9 @@
 #endif
 #ifndef __UINT32_MAX__
 #define __UINT32_MAX__ 0xffffffffUL
+#endif
+#if !defined(__GXX_EXPERIMENTAL_CXX0X__) && defined(__SYSPROGS_CODESENSE__)
+#define __GXX_EXPERIMENTAL_CXX0X__ 1
 #endif
 #ifndef __ULFRACT_MAX__
 #define __ULFRACT_MAX__ 0XFFFFFFFFP-32ULR
@@ -341,6 +353,9 @@
 #ifndef __AVR_ATmega328P__
 #define __AVR_ATmega328P__ 1
 #endif
+#ifndef __cpp_delegating_constructors
+#define __cpp_delegating_constructors 200604
+#endif
 #ifndef __HQ_IBIT__
 #define __HQ_IBIT__ 0
 #endif
@@ -356,11 +371,17 @@
 #ifndef __BIGGEST_ALIGNMENT__
 #define __BIGGEST_ALIGNMENT__ 1
 #endif
+#ifndef __STDC_UTF_16__
+#define __STDC_UTF_16__ 1
+#endif
 #ifndef __UINT24_MAX__
 #define __UINT24_MAX__ 16777215UL
 #endif
 #ifndef __BUILTIN_AVR_NOP
 #define __BUILTIN_AVR_NOP 1
+#endif
+#ifndef __GNUC_STDC_INLINE__
+#define __GNUC_STDC_INLINE__ 1
 #endif
 #ifndef __DQ_IBIT__
 #define __DQ_IBIT__ 0
@@ -370,6 +391,9 @@
 #endif
 #ifndef __ULFRACT_IBIT__
 #define __ULFRACT_IBIT__ 0
+#endif
+#ifndef __cpp_raw_strings
+#define __cpp_raw_strings 200710
 #endif
 #ifndef __INT_FAST32_MAX__
 #define __INT_FAST32_MAX__ 0x7fffffffL
@@ -398,6 +422,9 @@
 #ifndef __INT_FAST16_TYPE__
 #define __INT_FAST16_TYPE__ int
 #endif
+#ifndef __STRICT_ANSI__
+#define __STRICT_ANSI__ 1
+#endif
 #ifndef __LDBL_HAS_DENORM__
 #define __LDBL_HAS_DENORM__ 1
 #endif
@@ -410,7 +437,10 @@
 //VS2005-2012 treats all files as C++, while VS2013+ can treat C files correctly.
 #if defined(_MSC_VER) && (_MSC_VER < 1800 || defined(__cplusplus))
 #undef __cplusplus
-#define __cplusplus 199711L
+#define __cplusplus 201103L
+#endif
+#ifndef __cpp_ref_qualifiers
+#define __cpp_ref_qualifiers 200710
 #endif
 #ifndef __DEC128_MAX__
 #define __DEC128_MAX__ 9.999999999999999999999999999999999E6144DL
@@ -472,8 +502,17 @@
 #ifndef __ULACCUM_MAX__
 #define __ULACCUM_MAX__ 0XFFFFFFFFFFFFFFFFP-32ULK
 #endif
+#ifndef __cpp_rvalue_reference
+#define __cpp_rvalue_reference 200610
+#endif
+#ifndef __cpp_nsdmi
+#define __cpp_nsdmi 200809
+#endif
 #ifndef __SIZEOF_WINT_T__
 #define __SIZEOF_WINT_T__ 2
+#endif
+#ifndef __cpp_initializer_lists
+#define __cpp_initializer_lists 200806
 #endif
 #ifndef __SA_IBIT__
 #define __SA_IBIT__ 16
@@ -516,6 +555,9 @@
 #endif
 #ifndef __BUILTIN_AVR_ROUNDULR
 #define __BUILTIN_AVR_ROUNDULR 1
+#endif
+#ifndef __cpp_lambdas
+#define __cpp_lambdas 200907
 #endif
 #ifndef __BUILTIN_AVR_COUNTLSLLK
 #define __BUILTIN_AVR_COUNTLSLLK 1
@@ -615,6 +657,9 @@
 #endif
 #ifndef __ULLFRACT_FBIT__
 #define __ULLFRACT_FBIT__ 64
+#endif
+#ifndef __cpp_unicode_characters
+#define __cpp_unicode_characters 200704
 #endif
 #ifndef __FRACT_EPSILON__
 #define __FRACT_EPSILON__ 0x1P-15R
@@ -799,6 +844,9 @@
 #ifndef __FLT_HAS_INFINITY__
 #define __FLT_HAS_INFINITY__ 1
 #endif
+#ifndef __cpp_unicode_literals
+#define __cpp_unicode_literals 200710
+#endif
 #ifndef __USA_FBIT__
 #define __USA_FBIT__ 16
 #endif
@@ -859,6 +907,9 @@
 #ifndef __QQ_FBIT__
 #define __QQ_FBIT__ 7
 #endif
+#ifndef __cpp_range_based_for
+#define __cpp_range_based_for 200907
+#endif
 #ifndef __UTA_IBIT__
 #define __UTA_IBIT__ 16
 #endif
@@ -876,9 +927,6 @@
 #endif
 #ifndef __SIG_ATOMIC_MIN__
 #define __SIG_ATOMIC_MIN__ (-__SIG_ATOMIC_MAX__ - 1)
-#endif
-#ifndef AVR
-#define AVR 1
 #endif
 #ifndef __BUILTIN_AVR_FMULS
 #define __BUILTIN_AVR_FMULS 1
@@ -912,6 +960,9 @@
 #endif
 #ifndef __DEC64_MIN_EXP__
 #define __DEC64_MIN_EXP__ (-382)
+#endif
+#ifndef __cpp_decltype
+#define __cpp_decltype 200707
 #endif
 #ifndef __INT_FAST64_MAX__
 #define __INT_FAST64_MAX__ 0x7fffffffffffffffLL
@@ -963,6 +1014,9 @@
 #endif
 #ifndef __DBL_MANT_DIG__
 #define __DBL_MANT_DIG__ 24
+#endif
+#ifndef __cpp_inheriting_constructors
+#define __cpp_inheriting_constructors 200802
 #endif
 #ifndef __BUILTIN_AVR_ULLKBITS
 #define __BUILTIN_AVR_ULLKBITS 1
@@ -1057,6 +1111,9 @@
 #ifndef __DBL_DECIMAL_DIG__
 #define __DBL_DECIMAL_DIG__ 9
 #endif
+#ifndef __STDC_UTF_32__
+#define __STDC_UTF_32__ 1
+#endif
 #ifndef __DEC_EVAL_METHOD__
 #define __DEC_EVAL_METHOD__ 2
 #endif
@@ -1083,6 +1140,9 @@
 #endif
 #ifndef __INTMAX_MAX__
 #define __INTMAX_MAX__ 0x7fffffffffffffffLL
+#endif
+#ifndef __cpp_alias_templates
+#define __cpp_alias_templates 200704
 #endif
 #ifndef __BUILTIN_AVR_COUNTLSUHR
 #define __BUILTIN_AVR_COUNTLSUHR 1
@@ -1113,6 +1173,9 @@
 #endif
 #ifndef __FLT_MAX__
 #define __FLT_MAX__ 3.40282347e+38F
+#endif
+#ifndef __cpp_constexpr
+#define __cpp_constexpr 200704
 #endif
 #ifndef __USACCUM_FBIT__
 #define __USACCUM_FBIT__ 8
@@ -1237,6 +1300,9 @@
 #ifndef __ULACCUM_EPSILON__
 #define __ULACCUM_EPSILON__ 0x1P-32ULK
 #endif
+#ifndef __cpp_user_defined_literals
+#define __cpp_user_defined_literals 200809
+#endif
 #ifndef __SACCUM_IBIT__
 #define __SACCUM_IBIT__ 8
 #endif
@@ -1251,9 +1317,6 @@
 #endif
 #ifndef __UINT_FAST16_MAX__
 #define __UINT_FAST16_MAX__ 0xffffU
-#endif
-#ifndef __GNUC_GNU_INLINE__
-#define __GNUC_GNU_INLINE__ 1
 #endif
 #ifndef __GCC_ATOMIC_SHORT_LOCK_FREE
 #define __GCC_ATOMIC_SHORT_LOCK_FREE 1

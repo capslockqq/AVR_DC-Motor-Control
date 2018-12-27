@@ -65,6 +65,9 @@
     <ClCompile Include="operators.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="PWMDriver.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gcc_Debug.h">
@@ -89,6 +92,12 @@
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="operators.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="PWMDriver.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="IGPIODriver.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

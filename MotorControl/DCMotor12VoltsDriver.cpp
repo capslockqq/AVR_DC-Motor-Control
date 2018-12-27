@@ -1,20 +1,22 @@
 #include "DCMotor12VoltsDriver.h"
 
-DCMotor12VoltsDriver::DCMotor12VoltsDriver()
+DCMotor12VoltsDriver::DCMotor12VoltsDriver(IGPIODriver *pwm)
 {
-	PortSetup();
+	_pwm = pwm;
+	_pwm->Initialize();
 }
 
 void DCMotor12VoltsDriver::SetSpeed(float voltage, Direction dir)
 { 
 	int output = MapVoltage2PWM(voltage);
+	int outputData[2] = {0, 0};
 	if (dir == clockwise) {
-		OCR1A = 0; //Set duty cycle to 0%
-		OCR1B = output; //Set duty cycle to the calculated value from voltage
+		outputData[OCR1B_data] = output;
+		_pwm->SetOutPut(outputData);
 	}
 	else {
-		OCR1A = output; //Set duty cycle to the calculated value from voltage
-		OCR1B = 0; //Set duty cycle to 0%
+		outputData[OCR1A_data] = output;
+		_pwm->SetOutPut(outputData);
 	}
 }
 
@@ -25,26 +27,7 @@ DCMotor12VoltsDriver::~DCMotor12VoltsDriver()
 
 void DCMotor12VoltsDriver::PortSetup()
 {
-	DDRB = 0b11111111;
-	// PD6 is now an output
-	//PORTD &= ~(1 << DDD5);
-	OCR1A = 0;
-	OCR1B = 0;
-	// set PWM for 50% duty cycle
-
-	TCCR1A |= (1 << COM1A1);
-	// set none-inverting mode
 	
-	TCCR1A |= (1 << COM1B1);
-	// set none-inverting mode
-	
-	TCCR1B |= (1 << WGM01) | (1 << WGM00);
-
-	TCCR1A |= (1 << WGM01) | (1 << WGM00);
-	// set fast PWM Mode
-
-	TCCR1B |= (1 << CS01);
-	// set prescaler to 8 and starts PWM
 }
 
 
