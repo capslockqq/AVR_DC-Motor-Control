@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/EmilR/Desktop/GitHub/MotorControl/build/googletest/CMakeFiles/googletest"
+		},
+		{
+			"file" : "C:/Users/EmilR/Desktop/GitHub/MotorControl/build/googletest/CMakeFiles/2134dd3c424e24ad0808a830cd8399ee/googletest.rule"
+		},
+		{
+			"file" : "C:/Users/EmilR/Desktop/GitHub/MotorControl/build/googletest/CMakeFiles/1dda5e2c568ec439f13bcff4bbb1e0f4/googletest-complete.rule"
+		},
+		{
+			"file" : "C:/Users/EmilR/Desktop/GitHub/MotorControl/build/googletest/CMakeFiles/5ddb482c86e25c104da3c4453be908c6/googletest-install.rule"
+		},
+		{
+			"file" : "C:/Users/EmilR/Desktop/GitHub/MotorControl/build/googletest/CMakeFiles/5ddb482c86e25c104da3c4453be908c6/googletest-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/EmilR/Desktop/GitHub/MotorControl/build/googletest/CMakeFiles/5ddb482c86e25c104da3c4453be908c6/googletest-download.rule"
+		},
+		{
+			"file" : "C:/Users/EmilR/Desktop/GitHub/MotorControl/build/googletest/CMakeFiles/5ddb482c86e25c104da3c4453be908c6/googletest-update.rule"
+		},
+		{
+			"file" : "C:/Users/EmilR/Desktop/GitHub/MotorControl/build/googletest/CMakeFiles/5ddb482c86e25c104da3c4453be908c6/googletest-patch.rule"
+		},
+		{
+			"file" : "C:/Users/EmilR/Desktop/GitHub/MotorControl/build/googletest/CMakeFiles/5ddb482c86e25c104da3c4453be908c6/googletest-configure.rule"
+		},
+		{
+			"file" : "C:/Users/EmilR/Desktop/GitHub/MotorControl/build/googletest/CMakeFiles/5ddb482c86e25c104da3c4453be908c6/googletest-build.rule"
+		},
+		{
+			"file" : "C:/Users/EmilR/Desktop/GitHub/MotorControl/build/googletest/CMakeFiles/5ddb482c86e25c104da3c4453be908c6/googletest-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest"
+		],
+		"name" : "googletest"
+	}
+}
