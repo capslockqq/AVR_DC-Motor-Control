@@ -1,6 +1,6 @@
 #include "EncoderMock.h"
 #include "DCMotorMock.h"
-#include "../gmock/gmock.h"
+#include "gmock/gmock.h"
 #include "../MotorControl/PID.cpp"
 
 bool operator==(const PIDVal& lhs, const PIDVal& rhs)
