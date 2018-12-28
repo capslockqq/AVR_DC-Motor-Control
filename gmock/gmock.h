@@ -55,16 +55,16 @@
 //
 // where all clauses are optional and WillOnce() can be repeated.
 
-#include "gmock/gmock-actions.h"
-#include "gmock/gmock-cardinalities.h"
-#include "gmock/gmock-generated-actions.h"
-#include "gmock/gmock-generated-function-mockers.h"
-#include "gmock/gmock-generated-nice-strict.h"
-#include "gmock/gmock-generated-matchers.h"
-#include "gmock/gmock-matchers.h"
-#include "gmock/gmock-more-actions.h"
-#include "gmock/gmock-more-matchers.h"
-#include "gmock/internal/gmock-internal-utils.h"
+#include "gmock-actions.h"
+#include "gmock-cardinalities.h"
+#include "gmock-generated-actions.h"
+#include "gmock-generated-function-mockers.h"
+#include "gmock-generated-nice-strict.h"
+#include "gmock-generated-matchers.h"
+#include "gmock-matchers.h"
+#include "gmock-more-actions.h"
+#include "gmock-more-matchers.h"
+#include "internal/gmock-internal-utils.h"
 
 namespace testing {
 
