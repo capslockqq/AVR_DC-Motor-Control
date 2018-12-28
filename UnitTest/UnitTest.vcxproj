@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DCMotor12VoltsDriverTest.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="PIDTest.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

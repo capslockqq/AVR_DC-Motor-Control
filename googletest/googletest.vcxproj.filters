@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\7b239de49bb09b31fbe12b38f2ccdf32\googletest-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\7b239de49bb09b31fbe12b38f2ccdf32\googletest-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\7b239de49bb09b31fbe12b38f2ccdf32\googletest-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\7b239de49bb09b31fbe12b38f2ccdf32\googletest-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\7b239de49bb09b31fbe12b38f2ccdf32\googletest-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\7b239de49bb09b31fbe12b38f2ccdf32\googletest-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\7b239de49bb09b31fbe12b38f2ccdf32\googletest-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\7b239de49bb09b31fbe12b38f2ccdf32\googletest-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\086ad4c9633d2cf6588de3d915ff7eb2\googletest-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\61a57ce34e244f27d9a89c2f98306f4c\googletest.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\googletest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{737DBE3F-629E-3439-8340-9CF4952F347D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

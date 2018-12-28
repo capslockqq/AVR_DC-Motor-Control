@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\EmilR\Desktop\GitHub\MotorControl\googletest\CMakeFiles\61a57ce34e244f27d9a89c2f98306f4c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{737DBE3F-629E-3439-8340-9CF4952F347D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

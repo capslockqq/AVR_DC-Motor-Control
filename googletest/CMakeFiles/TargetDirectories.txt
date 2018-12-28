@@ -1,0 +1,3 @@
+C:/Users/EmilR/Desktop/GitHub/MotorControl/googletest/CMakeFiles/googletest.dir
+C:/Users/EmilR/Desktop/GitHub/MotorControl/googletest/CMakeFiles/ALL_BUILD.dir
+C:/Users/EmilR/Desktop/GitHub/MotorControl/googletest/CMakeFiles/ZERO_CHECK.dir
