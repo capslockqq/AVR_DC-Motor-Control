@@ -1,5 +1,5 @@
 #include "../MotorControl/DCMotor12VoltsDriver.cpp"
-#include "gmock/gmock.h"
+#include <gmock/gmock.h>
 #include "PWMDriverMock.h"
 #include <iostream>
 using namespace std;
