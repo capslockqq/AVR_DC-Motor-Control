@@ -8,7 +8,7 @@ public:
 	
 	void Initialize();
 	virtual void SetOutPut(int *data);
-	virtual int *GetInput();
+	virtual void GetInput(int *data);
 	~PWMDriver();
 };
 

@@ -1,15 +1,17 @@
 #include "QuadratureEncoder.h"
+#include "avr/io.h"
 
 
-
-QuadratureEncoder::QuadratureEncoder()
+QuadratureEncoder::QuadratureEncoder(IGPIODriver *interrupt)
 {
-	
+	_interrupt = interrupt;
+	_interrupt->Initialize();	
 }
-
 float QuadratureEncoder::GetPosition()
 {
-	return 0.0f;
+	_interrupt->GetInput(_data);
+	
+	return _data[ENCODER_VALUE_INDEX];
 }
 
 

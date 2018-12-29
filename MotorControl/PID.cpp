@@ -1,10 +1,21 @@
 #include "PID.h"
+#include <avr/io.h>
 
+#define F_CPU 16000000UL
+
+#define USART_BAUDRATE 2400 
+#define BAUD_PRESCALE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1) 
 PID::PID(PIDVal *val, IEncoder *encoder, IDCMotor *dcMotor)
 {
 	_encoder = encoder;
 	_dcMotor = dcMotor;
 	SetPIDValues(val);
+	
+	UCSR0B |= (1 << RXEN0) | (1 << TXEN0);    // Turn on the transmission and reception circuitry 
+	UCSR0C |= (1 << UCSZ00) | (1 << UCSZ01);  // Use 8-bit character sizes 
+
+	UBRR0H = (BAUD_PRESCALE >> 8);  // Load upper 8-bits of the baud rate value into the high byte of the UBRR register 
+	UBRR0L = BAUD_PRESCALE;  // Load lower 8-bits of the baud rate value into the low byte of the UBRR register 
 }
 
 void PID::SetPIDValues(PIDVal * val)
@@ -89,6 +100,9 @@ void PID::Control(float setpoint)
 	Correction(setpoint);
 	_dir = _correction < 0 ? counterClockwise : clockwise;
 	float numericCorrection = _correction < 0 ? _correction * -1 : _correction; // Making sure speed (voltage) is positive
+	while((UCSR0A & (1 << UDRE0)) == 0) {}
+	; // Do nothing until data have been received and is ready to be read from UDR 
+     UDR0 = _correction;   // Fetch the received byte value into the variable "ByteReceived" 
 	_dcMotor->SetSpeed(numericCorrection, _dir);
 }
 

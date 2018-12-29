@@ -35,9 +35,7 @@ void PWMDriver::SetOutPut(int *data)
 	OCR1B = data[1];
 }
 
-int *PWMDriver::GetInput() {
-	int dummy[1] = { 0 };
-	return dummy;
+void PWMDriver::GetInput(int *data) {
 }
 
 PWMDriver::~PWMDriver()

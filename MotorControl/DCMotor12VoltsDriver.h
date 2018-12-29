@@ -2,7 +2,7 @@
 #include "IDCMotor.h"
 #include "IGPIODriver.h"
 #include <math.h>
-#define MAX_VOLTAGE 12
+#define MAX_VOLTAGE 1023
 #define MIN_VOLTAGE 0
 class DCMotor12VoltsDriver : public IDCMotor
 {

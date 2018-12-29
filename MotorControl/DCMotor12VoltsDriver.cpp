@@ -37,11 +37,13 @@ int DCMotor12VoltsDriver::MapVoltage2PWM(float voltage)
 	voltage = (voltage <= MAX_VOLTAGE) ? voltage : MAX_VOLTAGE;
 	voltage = (voltage >= MIN_VOLTAGE) ? voltage : MIN_VOLTAGE;
 	
-	int inputStart = MIN_VOLTAGE;   //0V since that's the lowest voltage the motor is capable of
-	int inputEnd = MAX_VOLTAGE;   //12V since that's the maximum voltage the motor will output
-	int outputStart = 35;  // 50 on the couter is equvilent to 3V
-	int outputEnd = 1023;  // Highest values of pwm (100% duty cycle)
+	//int inputStart = MIN_VOLTAGE;   //0V since that's the lowest voltage the motor is capable of
+	//int inputEnd = MAX_VOLTAGE;   //12V since that's the maximum voltage the motor will output
+	//int outputStart = 35;  // 50 on the couter is equvilent to 3V
+	//int outputEnd = 1023;  // Highest values of pwm (100% duty cycle)
 	
-	float slope = 1.0 * (outputEnd - outputStart) / (inputEnd - inputStart);
-	return outputStart + round(slope * (voltage - inputStart));
+	//float slope = 1.0 * (outputEnd - outputStart) / (inputEnd - inputStart);
+	//return outputStart + round(slope * (voltage - inputStart));
+	
+	return voltage;
 }

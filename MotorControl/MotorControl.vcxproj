@@ -74,6 +74,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="DCMotor12VoltsDriver.h" />
+    <ClInclude Include="EncoderInterruptDriver.h" />
     <ClInclude Include="gcc_Debug.h" />
     <ClInclude Include="gcc_Release.h" />
     <ClInclude Include="IDCMotor.h" />
@@ -90,6 +91,7 @@
   <ItemGroup />
   <ItemGroup>
     <ClCompile Include="DCMotor12VoltsDriver.cpp" />
+    <ClCompile Include="EncoderInterruptDriver.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="operators.cpp" />
     <ClCompile Include="PID.cpp" />
